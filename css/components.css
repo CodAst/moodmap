@@ -1,0 +1,113 @@
+.topbar{
+    width: min(92vw, var(--maxw));
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin: 0 auto 14px auto;
+  }
+  
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  
+  .brand__logo{
+    /* MÁS GRANDE (como en el boceto) */
+    height: clamp(44px, 4vw, 64px);
+    width: auto;
+    display:block;
+    filter: drop-shadow(0 10px 18px rgba(31,38,135,.12));
+  }
+  
+  .btn{
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.72);
+    color: var(--text);
+    padding: 11px 14px;
+    border-radius: 999px;
+    cursor:pointer;
+    transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+    user-select:none;
+    box-shadow: 0 10px 25px rgba(31,38,135,.10);
+  }
+  
+  .btn:hover{
+    transform: translateY(-1px);
+    background: rgba(255,255,255,.88);
+  }
+  
+  .btn:active{ transform: translateY(0px); }
+  
+  .btn--primary{
+    background: linear-gradient(180deg, rgba(107,123,255,1), rgba(143,155,255,1));
+    border-color: rgba(107,123,255,.25);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 16px 34px rgba(107,123,255,.28);
+  }
+  
+  .btn--primary:hover{
+    background: linear-gradient(180deg, rgba(143,155,255,1), rgba(107,123,255,1));
+  }
+  
+  .btn--ghost{
+    background: rgba(255,255,255,.40);
+    box-shadow: none;
+  }
+  
+  .btnIcon{
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.75);
+    color: var(--text);
+    cursor:pointer;
+    font-size: 22px;
+    display:grid;
+    place-items:center;
+    transition: transform .12s ease, background .12s ease;
+    box-shadow: 0 10px 25px rgba(31,38,135,.10);
+  }
+  
+  .btnIcon:hover{
+    transform: translateY(-1px);
+    background: rgba(255,255,255,.92);
+  }
+  
+  /* Pill reutilizable */
+  .pill{
+    display:inline-block;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.70);
+    color: rgba(28,33,48,.72);
+    font-size: 13px;
+    box-shadow: 0 10px 25px rgba(31,38,135,.08);
+  }
+  
+  /* Footer mini “MoodMap • Demo” (como en el boceto) */
+  .demoFooter{
+    margin-top: 16px;
+    display:flex;
+    justify-content:center; /* por defecto centrado */
+  }
+  .demoFooter--left{
+    justify-content:flex-start; /* si lo quieres a la izquierda */
+  }
+  
+  .demoTag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(28,33,48,.10);
+    background: rgba(255,255,255,.82);
+    color: rgba(28,33,48,.70);
+    font-size: 14px;
+    box-shadow: 0 16px 35px rgba(31,38,135,.10);
+  }
+  

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMap — Slides</title>
+
+  <link rel="icon" href="../assets/img/icons/logoh.png" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/slides.css" />
+</head>
+
+<body>
+  <main class="screen">
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="MoodMap">
+        <picture>
+          <source srcset="../assets/img/icons/logoh.png" type="image/png" />
+          <img class="brand__logo" src="../assets/img/icons/logoh.jpg" alt="MoodMap logo" />
+        </picture>
+      </a>
+
+      <button class="btn btn--ghost" id="btnSkip" type="button">Skip</button>
+    </header>
+
+    <section class="slides" aria-label="Introducción MoodMap">
+      <!-- Slide 1 -->
+      <article class="slide is-active" data-slide="0" aria-hidden="false">
+        <div class="slide__content">
+          <img class="slide__icon" src="../assets/img/slides/slides1.png" alt="" aria-hidden="true" />
+
+          <h1 class="slide__title">Conoce tu ánimo, sin complicarte</h1>
+          <p class="slide__text">
+            Registra cómo te sientes en segundos y entiende mejor tus días.
+          </p>
+
+          <div class="demoFooter demoFooter--left">
+            <span class="demoTag">MoodMap • Demo</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 2 -->
+      <article class="slide" data-slide="1" aria-hidden="true">
+        <div class="slide__content">
+          <img class="slide__icon" src="../assets/img/slides/slides2.png" alt="" aria-hidden="true" />
+
+          <h2 class="slide__title">Actividades para hoy</h2>
+          <p class="slide__text">
+            Según tu emoción, MoodMap te sugiere planes simples para sentirte mejor.
+          </p>
+          <ul class="slide__list">
+            <li>Ideas cortas y realistas</li>
+            <li>Opciones de “maybe later”</li>
+            <li>Todo en una sola app</li>
+          </ul>
+
+          <div class="demoFooter demoFooter--left">
+            <span class="demoTag">MoodMap • Demo</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 3 -->
+      <article class="slide" data-slide="2" aria-hidden="true">
+        <div class="slide__content">
+          <img class="slide__icon" src="../assets/img/slides/slides3.png" alt="" aria-hidden="true" />
+
+          <h2 class="slide__title">Respira, relájate, duerme</h2>
+          <p class="slide__text">
+            Sonidos suaves para desconectar y descansar mejor.
+          </p>
+
+          <div class="demoFooter demoFooter--left">
+            <span class="demoTag">MoodMap • Demo</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 4 -->
+      <article class="slide" data-slide="3" aria-hidden="true">
+        <div class="slide__content">
+          <img class="slide__icon" src="../assets/img/slides/slides4.png" alt="" aria-hidden="true" />
+
+          <h2 class="slide__title">Mira tu progreso</h2>
+          <p class="slide__text">
+            Calendario y estadísticas para identificar patrones sin estrés.
+          </p>
+          <div class="slide__hint">Tip: la demo trae datos precargados.</div>
+          <div class="slide__cta">
+            <button class="btn btn--primary" id="btnStart" type="button">Empezar →</button>
+          </div>
+
+          <div class="demoFooter demoFooter--left">
+            <span class="demoTag">MoodMap • Demo</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Controles -->
+      <nav class="controls" aria-label="Controles de slides">
+        <button class="btnIcon" id="btnPrev" type="button" aria-label="Anterior">‹</button>
+
+        <div class="dots" role="tablist" aria-label="Indicador de slides">
+          <button class="dot is-active" type="button" data-dot="0" aria-label="Slide 1" role="tab" aria-selected="true"></button>
+          <button class="dot" type="button" data-dot="1" aria-label="Slide 2" role="tab" aria-selected="false"></button>
+          <button class="dot" type="button" data-dot="2" aria-label="Slide 3" role="tab" aria-selected="false"></button>
+          <button class="dot" type="button" data-dot="3" aria-label="Slide 4" role="tab" aria-selected="false"></button>
+        </div>
+
+        <button class="btnIcon" id="btnNext" type="button" aria-label="Siguiente">›</button>
+      </nav>
+
+      <p class="srOnly" id="srStatus" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/slides.js"></script>
+</body>
+</html>

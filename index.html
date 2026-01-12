@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMap</title>
+  <meta name="description" content="MoodMap - Demo" />
+  <link rel="icon" href="assets/img/icons/logoh.png" />
+</head>
+<body>
+  <noscript>Activa JavaScript para usar MoodMap.</noscript>
+
+  <script src="js/storage.js"></script>
+  <script>
+    // Redirección simple
+    if (window.MoodMapStorage?.hasSeenOnboarding()) {
+      window.location.replace("pages/bienvenida.html");
+    } else {
+      window.location.replace("pages/slides.html");
+    }
+  </script>
+</body>
+</html>

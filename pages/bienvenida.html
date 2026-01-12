@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMap — Bienvenida</title>
+
+  <link rel="icon" href="../assets/img/icons/logoh.png" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/bienvenida.css" />
+</head>
+
+<body>
+  <main class="screen welcome">
+    <section class="card welcomeCard" aria-label="Pantalla de bienvenida">
+      <div class="welcomeCard__logo">
+        <picture>
+          <source media="(max-width: 520px)" srcset="../assets/img/icons/logov.png" type="image/png" />
+          <source media="(max-width: 520px)" srcset="../assets/img/icons/logov.jpg" type="image/jpeg" />
+
+          <source media="(min-width: 521px)" srcset="../assets/img/icons/logoh.png" type="image/png" />
+          <source media="(min-width: 521px)" srcset="../assets/img/icons/logoh.jpg" type="image/jpeg" />
+
+          <img src="../assets/img/icons/logoh.png" alt="MoodMap logo" />
+        </picture>
+      </div>
+
+      <h1 class="welcomeCard__title">Bienvenida a MoodMap</h1>
+      <p class="welcomeCard__text">
+        Una app simple para registrar tu emoción, ver tu progreso y cuidarte cada día.
+      </p>
+
+      <div class="welcomeCard__actions">
+        <a class="btn btn--primary" href="inicio.html">Empezar →</a>
+        <a class="btn btn--ghost" href="../index.html">Volver</a>
+      </div>
+
+      <!-- Footer pill -->
+      <div class="demoFooter">
+        <span class="demoTag">MoodMap • Demo</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/bienvenida.js"></script>
+</body>
+</html>

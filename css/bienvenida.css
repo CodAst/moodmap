@@ -1,0 +1,56 @@
+/* Cambiamos el fondo global solo en bienvenida */
+body{
+    background:
+      radial-gradient(900px 520px at 20% 10%, rgba(107,123,255,.16), transparent 55%),
+      radial-gradient(820px 520px at 90% 15%, rgba(143,155,255,.16), transparent 55%),
+      url("../assets/img/backgrounds/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .welcome{
+    padding: 26px;
+  }
+  
+  .welcomeCard{
+    padding: 30px 22px;
+    text-align: center;
+    max-width: 720px;
+  }
+  
+  .welcomeCard__logo img{
+    height: 86px;
+    width: auto;
+    display:block;
+    margin: 0 auto 14px auto;
+    filter: drop-shadow(0 16px 26px rgba(31,38,135,.18));
+  }
+  
+  .welcomeCard__title{
+    margin: 8px 0 10px 0;
+    font-size: clamp(26px, 3.2vw, 40px);
+    letter-spacing: -0.02em;
+  }
+  
+  .welcomeCard__text{
+    margin: 0 auto 14px auto;
+    max-width: 54ch;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  
+  .welcomeCard__actions{
+    margin-top: 18px;
+    display:flex;
+    gap: 10px;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  
+  .welcomeCard__footer{
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--muted2);
+  }
+  
