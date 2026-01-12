@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMap — Iniciar sesión</title>
+
+  <link rel="icon" href="../assets/img/icons/logoh.png" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/inicio.css" />
+</head>
+
+<body>
+  <main class="screen">
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="MoodMap">
+        <picture>
+          <source srcset="../assets/img/icons/logoh.png" type="image/png" />
+          <img class="brand__logo" src="../assets/img/icons/logoh.jpg" alt="MoodMap logo" />
+        </picture>
+      </a>
+
+      <a class="btn btn--ghost" href="bienvenida.html">Volver</a>
+    </header>
+
+    <section class="authCard" aria-label="Iniciar sesión">
+      <div class="authInner">
+        <h1 class="authTitle">Iniciar sesión</h1>
+        <p class="authText">Ingresa con tu correo institucional para continuar.</p>
+
+        <form class="form" id="loginForm" novalidate>
+          <div class="field">
+            <label class="label" for="email">Correo institucional</label>
+            <input class="input" id="email" name="email" type="email" placeholder="usuario@est.ups.edu.ec" autocomplete="email" required />
+            <div class="helper">Solo se aceptan correos que terminen en <b>@est.ups.edu.ec</b>.</div>
+            <div class="errorText" id="emailError">Correo inválido. Usa tu correo @est.ups.edu.ec</div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn--primary" type="submit">Continuar →</button>
+            <button class="btn" type="button" id="btnClear">Limpiar</button>
+          </div>
+        </form>
+
+        <!-- Pill fijo abajo-izquierda -->
+        <div class="demoFooter demoFooter--left">
+          <span class="demoTag">MoodMap • Demo</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/inicio.js"></script>
+</body>
+</html>

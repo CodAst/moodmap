@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMap — Tu nombre</title>
+
+  <link rel="icon" href="../assets/img/icons/logoh.png" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/nombre.css" />
+</head>
+
+<body>
+  <main class="screen">
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="MoodMap">
+        <picture>
+          <source srcset="../assets/img/icons/logoh.png" type="image/png" />
+          <img class="brand__logo" src="../assets/img/icons/logoh.jpg" alt="MoodMap logo" />
+        </picture>
+      </a>
+
+      <a class="btn btn--ghost" href="inicio.html">Volver</a>
+    </header>
+
+    <section class="nameCard" aria-label="Ingresar nombre completo">
+      <div class="nameInner">
+        <h1 class="nameTitle">¿Cómo te llamas?</h1>
+        <p class="nameText">Escribe tu nombre completo para personalizar tu experiencia.</p>
+
+        <form class="form" id="nameForm" novalidate>
+          <div class="field">
+            <label class="label" for="fullName">Nombre completo</label>
+            <input class="input" id="fullName" name="fullName" type="text" placeholder="Ej: Melanie Murillo" autocomplete="name" required />
+            <div class="errorText" id="nameError">Por favor escribe tu nombre (mínimo 3 letras).</div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn--primary" type="submit">Continuar →</button>
+            <button class="btn" type="button" id="btnFill">Autocompletar</button>
+          </div>
+        </form>
+
+        <div class="demoFooter demoFooter--left">
+          <span class="demoTag">MoodMap • Demo</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/nombre.js"></script>
+</body>
+</html>

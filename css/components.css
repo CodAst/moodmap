@@ -13,12 +13,12 @@
   }
   
   .brand__logo{
-    /* MÁS GRANDE (como en el boceto) */
-    height: clamp(44px, 4vw, 64px);
+    /* MÁS grande (como en el boceto) */
+    height: clamp(64px, 5.8vw, 92px);
     width: auto;
     display:block;
     filter: drop-shadow(0 10px 18px rgba(31,38,135,.12));
-  }
+  }  
   
   .btn{
     border: 1px solid var(--line);
@@ -109,5 +109,69 @@
     color: rgba(28,33,48,.70);
     font-size: 14px;
     box-shadow: 0 16px 35px rgba(31,38,135,.10);
+  }
+  
+  /* ===== Form controls (reutilizable) ===== */
+.form{
+    width: min(92%, 460px);
+    margin: 12px auto 0 auto;
+    display:flex;
+    flex-direction:column;
+    gap: 14px;
+  }
+  
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap: 8px;
+    text-align: left;
+  }
+  
+  .label{
+    font-size: 14px;
+    color: rgba(28,33,48,.70);
+    font-weight: 600;
+  }
+  
+  .input{
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(28,33,48,.12);
+    background: rgba(255,255,255,.86);
+    outline: none;
+    box-shadow: 0 14px 30px rgba(31,38,135,.08);
+    transition: border-color .15s ease, box-shadow .15s ease, transform .12s ease;
+  }
+  
+  .input:focus{
+    border-color: rgba(107,123,255,.55);
+    box-shadow: 0 18px 42px rgba(107,123,255,.18);
+  }
+  
+  .helper{
+    font-size: 13px;
+    color: rgba(28,33,48,.55);
+    line-height: 1.35;
+  }
+  
+  .errorText{
+    font-size: 13px;
+    color: #c94141;
+    line-height: 1.35;
+    display:none;
+  }
+  
+  .input.is-error{
+    border-color: rgba(201,65,65,.55);
+    box-shadow: 0 18px 42px rgba(201,65,65,.12);
+  }
+  
+  .actions{
+    display:flex;
+    justify-content:center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 6px;
   }
   

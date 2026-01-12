@@ -1,0 +1,53 @@
+body{
+    background:
+      radial-gradient(900px 520px at 20% 10%, rgba(107,123,255,.16), transparent 55%),
+      radial-gradient(820px 520px at 90% 15%, rgba(143,155,255,.16), transparent 55%),
+      url("../assets/img/backgrounds/fondo1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .nameCard{
+    width: min(92vw, 980px);
+    height: clamp(520px, 74vh, 700px); /* ✅ fijo */
+    border: 1px solid rgba(28,33,48,.10);
+    border-radius: 26px;
+    background: rgba(255,255,255,.60);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 22px 65px rgba(31,38,135,.16);
+    overflow: hidden;
+  }
+  
+  .nameInner{
+    height: 100%;
+    width: 100%;
+    padding: 34px 24px;
+    position: relative;
+  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .nameTitle{
+    margin: 0 0 10px 0;
+    font-size: clamp(28px, 3.6vw, 50px);
+    letter-spacing: -0.02em;
+  }
+  
+  .nameText{
+    margin: 0 auto 8px auto;
+    max-width: 56ch;
+    color: rgba(28,33,48,.68);
+    line-height: 1.55;
+  }
+  
+  .nameInner .demoFooter{
+    position:absolute;
+    left: 22px;
+    bottom: 22px;
+  }
+  
