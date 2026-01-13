@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMap — Add details</title>
+
+  <link rel="icon" href="../assets/img/icons/logoh.png" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/formulario_sentimientos.css" />
+</head>
+
+<body>
+  <main class="screen">
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="MoodMap">
+        <picture>
+          <source srcset="../assets/img/icons/logoh.png" type="image/png" />
+          <img class="brand__logo" src="../assets/img/icons/logoh.jpg" alt="MoodMap logo" />
+        </picture>
+      </a>
+
+      <a class="btn btn--ghost" href="sentimiento.html">Volver</a>
+    </header>
+
+    <section class="detailCard" aria-label="Detalles del estado de ánimo">
+      <div class="detailInner">
+        <div class="summary">
+          <div class="summaryEmoji" id="summaryEmoji" aria-hidden="true">🙂</div>
+          <div class="summaryText">
+            <div class="summaryTitle">Detalles de tu emoción</div>
+            <div class="summarySub" id="summarySub">Hoy te sientes: <b>Okay</b></div>
+          </div>
+        </div>
+
+        <form class="form" id="detailForm" novalidate>
+          <div class="field">
+            <label class="label" for="intensity">Intensidad</label>
+            <div class="rangeRow">
+              <input class="range rangeInput" id="intensity" type="range" min="1" max="10" step="1" value="5" />
+              <div class="rangeValue" id="intensityValue">5</div>
+            </div>
+            <div class="helper">1 = suave • 10 = muy intenso</div>
+          </div>
+
+          <div class="field">
+            <div class="label">¿Qué describe mejor tu emoción?</div>
+            <div class="chips" id="chips">
+              <button class="chip" type="button" data-tag="Calm">Calm</button>
+              <button class="chip" type="button" data-tag="Anxious">Anxious</button>
+              <button class="chip" type="button" data-tag="Stressed">Stressed</button>
+              <button class="chip" type="button" data-tag="Tired">Tired</button>
+              <button class="chip" type="button" data-tag="Motivated">Motivated</button>
+              <button class="chip" type="button" data-tag="Excited">Excited</button>
+              <button class="chip" type="button" data-tag="Overwhelmed">Overwhelmed</button>
+              <button class="chip" type="button" data-tag="Grateful">Grateful</button>
+            </div>
+            <div class="helper">Puedes elegir varias.</div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="note">Reflexión (opcional)</label>
+            <textarea class="textarea" id="note" placeholder="¿Qué pasó hoy? ¿Qué te gustaría recordar?"></textarea>
+          </div>
+
+          <div class="field">
+            <label class="label" for="media">Subir una foto (opcional)</label>
+            <input class="input" id="media" type="file" accept="image/*" />
+            <div class="helper">En esta demo solo se guarda el nombre del archivo (no se sube).</div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn--primary" type="submit">Guardar detalles →</button>
+            <a class="btn" href="principal.html">Omitir</a>
+          </div>
+        </form>
+
+        <div class="demoFooter demoFooter--left">
+          <span class="demoTag">MoodMap • Demo</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/formulario_sentimientos.js"></script>
+</body>
+</html>

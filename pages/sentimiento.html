@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMap — Tu emoción</title>
+
+  <link rel="icon" href="../assets/img/icons/logoh.png" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/sentimiento.css" />
+</head>
+
+<body>
+  <main class="screen">
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="MoodMap">
+        <picture>
+          <source srcset="../assets/img/icons/logoh.png" type="image/png" />
+          <img class="brand__logo" src="../assets/img/icons/logoh.jpg" alt="MoodMap logo" />
+        </picture>
+      </a>
+
+      <a class="btn btn--ghost" href="nombre.html">Volver</a>
+    </header>
+
+    <section class="moodCard" aria-label="Registrar emoción">
+      <div class="moodInner">
+        <div class="moodIcon" id="moodEmoji" aria-hidden="true">🙂</div>
+
+        <h1 class="moodTitle" id="titleHello">¿Cómo te sientes hoy?</h1>
+        <p class="moodText" id="moodDesc">Selecciona tu estado de ánimo con la barra.</p>
+
+        <div class="moodLabel" id="moodLabel">Okay</div>
+
+        <div class="rangeWrap">
+          <input class="rangeInput" id="moodRange" type="range" min="0" max="4" step="1" value="2" />
+          <div class="rangeTicks" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn--primary" id="btnSaveMood" type="button">Guardar emoción</button>
+          <button class="btn" id="btnReset" type="button">Reiniciar</button>
+        </div>
+
+        <!-- Pill fijo abajo-izq -->
+        <div class="demoFooter demoFooter--left">
+          <span class="demoTag">MoodMap • Demo</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modalOverlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <h3 id="modalTitle">¡Guardado!</h3>
+      <p>¿Quieres agregar detalles de cómo te sientes?</p>
+      <div class="modalActions">
+        <button class="btn btn--ghost" id="btnMaybeLater" type="button">Maybe later</button>
+        <button class="btn btn--primary" id="btnAddDetails" type="button">Add details →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/sentimiento.js"></script>
+</body>
+</html>
